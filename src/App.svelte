@@ -1,12 +1,19 @@
 <script>
   import Login from "./Login.svelte";
+  import Navbar from "./Navbar.svelte";
 </script>
 
 <svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma-rtl.min.css"
-  />
+  <title>Todo List</title>
 </svelte:head>
 
-<main><Login /></main>
+<main>
+  <Navbar />
+  <Login />
+</main>
+
+<style>
+  main {
+    padding: 1em;
+  }
+</style>

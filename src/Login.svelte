@@ -27,7 +27,7 @@
 
 <style>
   section {
-    background: rgb(235, 235, 235);
+    /* background: rgb(235, 235, 235); */
     padding: 20px;
   }
 </style>
