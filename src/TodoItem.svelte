@@ -27,9 +27,9 @@
   {:else}
     <button on:click={toggleStatus}>❌</button>
   {/if}
-</li>
 
-<button on:click={remove}>🗑</button>
+  <button on:click={remove}>🗑</button>
+</li>
 
 <style>
   .complete {
