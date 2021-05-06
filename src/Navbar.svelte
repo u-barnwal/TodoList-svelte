@@ -8,7 +8,7 @@
 
 <nav>
   <img src="/favicon.png" alt="logo" />
-  <div class="title">Todo List</div>
+  <h2>Todo List</h2>
 
   <div class="flex-1" />
 
@@ -28,7 +28,7 @@
     padding: 1em;
     background-color: white;
     margin: 0;
-    margin-bottom: 1;
+    margin-bottom: 3em;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
@@ -39,9 +39,8 @@
     height: 2em;
   }
 
-  .title {
-    font-size: 1.5em;
-    font-weight: bold;
+  h2 {
+    margin: 0;
     margin-left: 0.5em;
   }
 

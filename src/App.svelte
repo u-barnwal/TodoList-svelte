@@ -4,6 +4,7 @@
 
   import { auth, googleProvider } from "./firebase";
   import { authState } from "rxfire/auth";
+  import LoginMessage from "./LoginMessage.svelte";
 
   let user = authState(auth);
 
@@ -25,11 +26,15 @@
 
   {#if $user}
     <Todos {...$user} />
+  {:else}
+    <LoginMessage />
   {/if}
 </main>
 
 <style>
   main {
     padding: 1em;
+    max-width: 40em;
+    margin: auto;
   }
 </style>
