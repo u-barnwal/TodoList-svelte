@@ -6,8 +6,6 @@
 
   let user;
 
-  // const unsubscribe = authState(auth).subscribe((u) => (user = u));
-
   function login() {
     auth.signInWithPopup(googleProvider);
   }
@@ -23,3 +21,10 @@
     <button on:click={login}>Signin with Google</button>
   {/if}
 </section>
+
+<style>
+  section {
+    background: rgb(235, 235, 235);
+    padding: 20px;
+  }
+</style>
