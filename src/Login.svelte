@@ -10,8 +10,6 @@
   function login() {
     auth.signInWithPopup(googleProvider);
   }
-
-  console.log("user", user);
 </script>
 
 <section>

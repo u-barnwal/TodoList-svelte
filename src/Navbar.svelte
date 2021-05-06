@@ -1,5 +1,9 @@
 <script>
-  export let user;
+  export let photoURL;
+  export let uid;
+
+  export let login;
+  export let logout;
 </script>
 
 <nav>
@@ -8,7 +12,15 @@
 
   <div class="flex-1" />
 
-  <button><img src="/google.png" alt="google" /> Login</button>
+  {#if !uid}
+    <button on:click={login}
+      ><img src="/google.png" alt="google" /> Login</button
+    >
+  {:else}
+    <img class="img-user" src={photoURL} alt="user" />
+
+    <button on:click={logout}>Logout</button>
+  {/if}
 </nav>
 
 <style>
@@ -35,7 +47,7 @@
 
   button {
     border: none;
-    padding: 1em 2em;
+    padding: 0.8em 1.5em;
     border-radius: 0.5em;
     text-transform: uppercase;
     cursor: pointer;
@@ -53,5 +65,12 @@
 
   button:hover {
     transform: scale(1.05);
+  }
+
+  .img-user {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: 1em;
   }
 </style>
