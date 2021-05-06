@@ -4,7 +4,7 @@
   import { auth, googleProvider } from "./firebase";
   import { authState } from "rxfire/auth";
 
-  let user;
+  let user = authState(auth);
 
   function login() {
     auth.signInWithPopup(googleProvider);
