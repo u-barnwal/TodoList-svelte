@@ -44,6 +44,7 @@
   }
 
   span {
+    word-wrap: break-word;
   }
 
   button {
