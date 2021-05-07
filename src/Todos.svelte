@@ -41,16 +41,41 @@
   }
 </script>
 
+<div>
+  <input bind:value={text} placeholder="Your task..." />
+
+  <button on:click={add} title="Add Task">➕</button>
+</div>
+
 {#each $todos as todo}
   <TodoItem {...todo} on:remove={removeItem} on:toggle={updateStatus} />
 {/each}
 
-<input bind:value={text} />
-
-<button on:click={add}>Add Task</button>
-
 <style>
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+  }
+
   input {
-    display: block;
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  button:hover {
+    opacity: 0.8;
   }
 </style>
