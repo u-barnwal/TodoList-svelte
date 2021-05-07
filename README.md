@@ -25,5 +25,21 @@ Run the dev build
 ```bash
 yarn dev
 ```
-
 Navigate to [localhost:5000](http://localhost:5000). 
+
+## Technologies Used
+- NodeJS
+- SvelteJS
+- Google Firebase
+  - Google Authentication
+  - Firestore
+  
+## Features
+- Lightweight
+- Easy-to-use
+- Real-time updates
+- Secured by Google Auth
+- Data storage
+
+## Credits
+- Fireship Tutorial: https://fireship.io/lessons/svelte-v3-overview-firebase/
