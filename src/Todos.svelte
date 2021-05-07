@@ -11,7 +11,7 @@
   const query = db
     .collection("todos")
     .where("uid", "==", uid)
-    .orderBy("created", "desc");
+    .orderBy("created");
 
   const todos = collectionData(query, "id").pipe(startWith([]));
 
