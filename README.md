@@ -12,7 +12,7 @@ Following images are linked to their full size
   <img align="center" src="./samples/list.png" width="45%" />
 </a>
 
-## Get started
+## Get Started
 
 Install the dependencies
 
