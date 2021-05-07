@@ -1,10 +1,10 @@
-> This is the exact replica of this project is shown in [Fireship Tutorial](https://youtu.be/043h4ugAj4c). Checkout the `master` branch for updated better version.
+> This is the exact replica of how this project is shown in [Fireship Tutorial](https://youtu.be/043h4ugAj4c). Checkout the **[master](https://github.com/u-barnwal/TodoList-svelte/tree/master)** branch for updated better version.
 
 # TodoList Svelte
 Simple todo list web application built with SvelteJS and Firestore and Google Authentication.
 
 ## Samples
-Following images are linked to their full size. Better version on `master` branch
+Following images are linked to their full size.
 
 <a href="./samples/list.png">
   <img align="center" src="./samples/list.png" width="45%" />
