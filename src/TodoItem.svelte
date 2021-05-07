@@ -24,7 +24,7 @@
 
   <div class="flex-1" />
 
-  {#if complete}
+  {#if !complete}
     <button on:click={toggleStatus} title="Mark as Complete">✔️</button>
   {:else}
     <button on:click={toggleStatus} title="Mark as Incomplete">❌</button>
