@@ -26,12 +26,17 @@
 <style>
   nav {
     padding: 1em;
-    background-color: white;
     margin: 0;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     border-radius: 0.5em;
     display: flex;
     align-items: center;
+
+    background: #8a2387;
+    background: -webkit-linear-gradient(to right, #f27121, #e94057, #8a2387);
+    background: linear-gradient(to right, #f27121, #e94057, #8a2387);
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
   img {

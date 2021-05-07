@@ -19,19 +19,44 @@
   export let complete;
 </script>
 
-<li in:fly={{ x: 900, duration: 500 }}>
+<section in:fly={{ x: 900, duration: 300 }}>
   <span class:complete>{text}</span>
 
+  <div class="flex-1" />
+
   {#if complete}
-    <button on:click={toggleStatus}>✔️</button>
+    <button on:click={toggleStatus} title="Mark as Complete">✔️</button>
   {:else}
-    <button on:click={toggleStatus}>❌</button>
+    <button on:click={toggleStatus} title="Mark as Incomplete">❌</button>
   {/if}
 
-  <button on:click={remove}>🗑</button>
-</li>
+  <button on:click={remove} title="Remove">🗑</button>
+</section>
 
 <style>
+  section {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
   .complete {
     text-decoration: line-through;
     color: green;

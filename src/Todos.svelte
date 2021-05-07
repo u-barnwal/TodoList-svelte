@@ -41,11 +41,9 @@
   }
 </script>
 
-<ul>
-  {#each $todos as todo}
-    <TodoItem {...todo} on:remove={removeItem} on:toggle={updateStatus} />
-  {/each}
-</ul>
+{#each $todos as todo}
+  <TodoItem {...todo} on:remove={removeItem} on:toggle={updateStatus} />
+{/each}
 
 <input bind:value={text} />
 
