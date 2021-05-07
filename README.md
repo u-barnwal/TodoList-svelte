@@ -43,3 +43,4 @@ Navigate to [localhost:5000](http://localhost:5000).
 
 ## Credits
 - Fireship Tutorial: https://fireship.io/lessons/svelte-v3-overview-firebase/
+- Using ENV Variables: https://www.donielsmith.com/blog/2020-05-11-how-to-use-dotenv-with-svelte-3/
