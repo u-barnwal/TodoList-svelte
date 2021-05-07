@@ -4,15 +4,10 @@
   import { collectionData } from "rxfire/firestore";
   import { startWith } from "rxjs/operators";
 
-  // User ID passed from parent
   export let uid;
 
-  console.log("---", uid);
-
-  // Form Text
   let text = "";
 
-  // Query requires an index, see screenshot below
   const query = db
     .collection("todos")
     .where("uid", "==", uid)
@@ -21,13 +16,16 @@
   const todos = collectionData(query, "id").pipe(startWith([]));
 
   function add() {
-    db.collection("todos").add({
-      uid,
-      text,
-      complete: false,
-      created: Date.now(),
-    });
-    text = "";
+    if (text) {
+      db.collection("todos").add({
+        uid,
+        text,
+        complete: false,
+        created: Date.now(),
+      });
+
+      text = "";
+    }
   }
 
   function updateStatus(event) {
