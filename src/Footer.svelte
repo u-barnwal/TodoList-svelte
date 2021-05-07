@@ -1,5 +1,6 @@
 <section>
   <a
+    target="_blank"
     href="https://github.com/u-barnwal/TodoList-svelte/"
     title="View on GitHub"
   >
@@ -9,7 +10,7 @@
     />
   </a>
 
-  <a href="https://utsavbarnwal.me/" title="Developer"
+  <a target="_blank" href="https://utsavbarnwal.me/" title="Developer"
     ><img src="https://utsavbarnwal.me/images/user.jpeg" alt="developer" /></a
   >
 </section>
