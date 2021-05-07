@@ -5,6 +5,7 @@
   import { auth, googleProvider } from "./firebase";
   import { authState } from "rxfire/auth";
   import LoginMessage from "./LoginMessage.svelte";
+  import Footer from "./Footer.svelte";
 
   let user = authState(auth);
 
@@ -29,6 +30,8 @@
   {:else}
     <LoginMessage />
   {/if}
+
+  <Footer />
 </main>
 
 <style>
